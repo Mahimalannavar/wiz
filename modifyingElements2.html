@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		 change style attribute of an element
+		dynamically using JavaScript
+	</title>
+</head>
+
+<body>
+	<center>
+		<h1 id = "h1" style = "color:green;" >
+			Wiztoonz Filmora Contest
+		</h1>
+		
+		<p id = "UP" style =
+				"font-size: 15px; font-weight: bold;">  	</p>
+			
+		<button onclick = "Run()">
+			Click here
+		</button>
+		
+		<p id = "DOWN" style =
+			"font-size: 23px; font-weight: bold; color: green; ">
+		</p>
+		
+		<script>
+			var el_up = document.getElementById("UP");
+			var el_down = document.getElementById("DOWN");
+			var heading = document.getElementById("h1");
+			el_up.innerHTML = "Click on the button to "
+							+ "change the style attribute";
+			
+			function Run() {
+
+				heading.style["color"] = "white";
+				heading.style["background-color"] = "red";
+				heading.style["width"] = "400px";
+				heading.style["border"] = "1px solid green";
+			
+				document.querySelector("h1").title= "Yes we have title active";
+				
+				el_up.style["background-color"] = "green";
+				el_up.style["width"] = "400px";
+				el_up.style["border"] = "1px solid black";
+				
+				el_down.innerHTML = "Style Attribute Changed";
+			}		
+		</script>
+	</center>
+</body>
+
+</html>

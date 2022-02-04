@@ -8,9 +8,34 @@
     <body>
         
         <script type="text/javascript">
-            var x=2, y=39
-            var z = eval("x+y");
-            document.write(z);
+            var x=2, y=39, z=3, i=26;
+            var z = z + eval("x+y");
+            document.write(z+"<br/>");
+
+            //eval
+            z += eval("x+y");
+            document.write(z+"<br/>");
+
+            //parseInt
+            z=parseInt("F",16);
+            document.write(z+"<br/>");
+
+            //parseFloat
+            z=parseFloat("3.14");
+            document.write(z+"<br/>");
+
+            // escape
+            z=escape("%65")
+            document.write(z+"<br/>");
+
+            for(i=26 ; i<150; i++)
+            {
+             // unescape
+             z=unescape("%"+i)
+            document.write(z+"<br/>");
+            }
+
+
         </script>
        
     </body>
